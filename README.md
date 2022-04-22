@@ -32,13 +32,9 @@ nbs 관련 논문의 연구 동향을 파악하고 이를 어떻게 국내 산�
 | 5 | 표제어(Lemmaization) | (producers, n) → (producer, n) ,  (growing, v) → (grow, v) |
 | 6 | 명사 추출  | 품사 ‘n’인 단어들만 추출  |
 | 7-1 | 불용어 제거 - nltk 제공  | I my me mine all should a ...  |
-| 7-2 | 불용어 제거 - NbS 제공  | 'nature', 'based', 'solutions', 'nbs', 'studing', 'studies', 'study' ,'management', 'manage', 'model', 'models', 'use', 'used', 'uses',
- 'plan', 'plans', 'planned', 'increase', 'increased', 'increases',
- 'service', 'services', 'result', 'results', 'resulted', 'system', 'systems', 'implement', 'implements', 'implementation', 'treat', 'treatment', 'treated', 'treats' |
-| 7-3 | 불용어 제거 - DIL 제공  | 'change','area’,'city','approach','author','analysis','benefit','impact','effect','research','adaptation','planning','project','solution','challenge','development','journal','process','paper','nb’,'ecosystem', 'quality', 'method', 'level', 'article', 'data', 'value’ |
-| 8 | TF-IDF 임계값 이하 단어 제거  | 전체 논문의 95%에서 등장하는 단어 제거 
-'others','twelve','amount','move','name','side','front','interest',
-'latter','etc’ 등 총 60개 단어 제거  |
+| 7-2 | 불용어 제거 - NbS 제공  | 'nature', 'based', 'solutions', 'nbs', 'studing', 'studies', 'study' ,'management', 'manage', 'model', 'models', 'use', 'used', 'uses','plan', 'plans', 'planned', 'increase', 'increased', 'increases','service', 'services', 'result', 'results', 'resulted', 'system', 'systems', 'implement', 'implements', 'implementation', 'treat', 'treatment', 'treated', 'treats' |
+| 7-3 | 불용어 제거 - DIL 제공|'change','area’,'city','approach','author','analysis','benefit','impact','effect','research','adaptation','planning','project','solution','challenge','development','journal','process','paper','nb’,'ecosystem', 'quality', 'method', 'level', 'article', 'data', 'value’ |
+| 8 | TF-IDF 임계값 이하 단어 제거  | 전체 논문의 95%에서 등장하는 단어 제거 'others','twelve','amount','move','name','side','front','interest','latter','etc’ 등 총 60개 단어 제거  |
 ### 데이터 분석
 
 - 분석에 활용된 전체 단어노드에 대한 빈도를 분석해 핵심 키워드 도출
