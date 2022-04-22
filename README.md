@@ -28,8 +28,7 @@ nbs 관련 논문의 연구 동향을 파악하고 이를 어떻게 국내 산�
 | 1 | 한글, 숫자, 특수문자 등 제거  |  |
 | 2 | 대문자 ⇒ 소문자  |  |
 | 3 | 토큰화 및 품사 태깅 | (terrestrial, JJ), (wine, NN), (face, VBP),(a, DT) |
-| 4 | 품사 형태 변경  | (terrestrial, a), (wine,n), (face, v)
-* 표제어 추출 input 형식에 맞는 품사 형태로 변경  |
+| 4 | 품사 형태 변경  | (terrestrial, a), (wine,n), (face, v) * 표제어 추출 input 형식에 맞는 품사 형태로 변경  |
 | 5 | 표제어(Lemmaization) | (producers, n) → (producer, n) ,  (growing, v) → (grow, v) |
 | 6 | 명사 추출  | 품사 ‘n’인 단어들만 추출  |
 | 7-1 | 불용어 제거 - nltk 제공  | I my me mine all should a ...  |
