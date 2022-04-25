@@ -33,9 +33,18 @@ nbs 관련 논문의 연구 동향을 파악하고 이를 어떻게 국내 산�
 | 6 | 명사 추출  | 품사 ‘n’인 단어들만 추출  |
 | 7-1 | 불용어 제거 - nltk 제공  | I my me mine all should a ...  |
 | 7-2 | 불용어 제거 - NbS 제공  | 'nature', 'based', 'solutions', 'nbs', 'studing', 'studies', 'study' ,'management', 'manage', 'model', 'models', 'use', 'used', 'uses','plan', 'plans', 'planned', 'increase', 'increased', 'increases','service', 'services', 'result', 'results', 'resulted', 'system', 'systems', 'implement', 'implements', 'implementation', 'treat', 'treatment', 'treated', 'treats' |
-| 7-3 | 불용어 제거 - DIL 제공|'change','area’,'city','approach','author','analysis','benefit','impact','effect','research','adaptation','planning','project','solution','challenge','development','journal','process','paper','nb’,'ecosystem', 'quality', 'method', 'level', 'article', 'data', 'value’ |
+| 7-3 | 불용어 제거 - DILab 제공|'change','area’,'city','approach','author','analysis','benefit','impact','effect','research','adaptation','planning','project','solution','challenge','development','journal','process','paper','nb’,'ecosystem', 'quality', 'method', 'level', 'article', 'data', 'value’ |
 | 8 | TF-IDF 임계값 이하 단어 제거  | 전체 논문의 95%에서 등장하는 단어 제거 'others','twelve','amount','move','name','side','front','interest','latter','etc’ 등 총 60개 단어 제거  |
 ### 데이터 분석
 
-- 분석에 활용된 전체 단어노드에 대한 빈도를 분석해 핵심 키워드 도출
-- 전체 단어노드의 평균 TF-IDF는 284.40으로 본 연구에서는 TF-IDF 값 0.1을 임계치로 설정하여 이보다 큰 가중치 값을 갖는 단어들을 대상으로 LDA 분석에 활용
+1. 분할표
+2. 키워드 추가 
+- 연관분석 (장바구니 분석 - apriori)
+- 연관어 분석 (동시 출현 기반, word2vec 기반)
+3. 토픽모델링
+- LDA(Latent Dirichlet Allocation): 전체 단어노드의 평균 TF-IDF는 284.40으로 본 연구에서는 TF-IDF 값 0.1을 임계치로 설정하여 이보다 큰 가중치 값을 갖는 단어들을 대상으로 LDA 분석에 활용
+- Dynamic Topic Modeling
+4. 동시 출현 기반 연관어 분석
+- 중심성 계수 → 연결 중심성 / 매개 중심성 / 근접 중심성
+- 1년 단위(2014년-2022년), 3년 단위(2014년-2022년), 4년 단위 분석(2011년-2022년)
+5. 단순 빈도 분석 (HOT/COLD)
